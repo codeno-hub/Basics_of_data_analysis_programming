@@ -1,0 +1,47 @@
+# Object-Oriented Programming (OOP) in Python
+
+This notebook demonstrates the core concepts of the **Object-Oriented Programming System (OOPS)** in Python with clear, hands-on examples.
+
+## Table of Contents
+1. [Introduction to OOP](#1-introduction-to-oop)
+2. [Classes and Objects](#2-classes-and-objects)
+3. [Methods and Class Variables](#3-methods-and-class-variables)
+4. [Encapsulation](#4-encapsulation)
+5. [Inheritance](#5-inheritance)
+6. [Polymorphism](#6-polymorphism)
+7. [Method Overriding](#7-method-overriding)
+
+---
+
+## 1. Introduction to OOP
+OOP is a programming paradigm that uses **objects** to represent data and methods. It makes code:
+*   **Easy to understand**: Mimics real-world entities.
+*   **Safe**: Secures data via access modifiers.
+*   **Easy to fix**: Highly modular code structure.
+
+## 2. Classes and Objects
+*   **Class**: A blueprint or template for creating objects.
+*   **Object**: An instance of a class.
+*   *Example in notebook*: The `student` class is used as a design template to instantiate unique student objects (`s1`, `s2`, `s3`) with their respective `name` and `marks` attributes.
+
+## 3. Methods and Class Variables
+*   **Class Variables**: Shared among all instances of a class.
+*   *Example in notebook*: The `Employee` class uses a `count` class variable to track the total number of employee instances created across the runtime.
+
+## 4. Encapsulation
+Encapsulation is the practice of bundling data and methods inside a single unit (class) and restricting direct access to some components:
+*   **Public Variables** (`self.name`): Accessible from anywhere.
+*   **Protected Variables** (`self._branch`): Suggested to be used only within the class and subclasses.
+*   **Private Variables** (`self.__balance`): Restricts access outside the class using name mangling.
+
+## 5. Inheritance
+Inheritance allows a new class (Child/Derived class) to inherit attributes and methods from an existing class (Parent/Base class), facilitating code reusability.
+*   *Example in notebook*: `StudentDetails` inherits from `Person` and uses `super().__init__()` to reuse the parent constructor.
+
+## 6. Polymorphism
+Polymorphism allows different classes to have methods with the same name but different implementations.
+*   *Example in notebook*: The classes `Dog`, `Cat`, and `Cow` all implement a `.sound()` method, which behaves differently depending on the object type being iterated.
+
+## 7. Method Overriding
+Method Overriding occurs when a child class provides a specific implementation of a method that is already defined in its parent class.
+*   *Example in notebook*: `Lion` and `Elephant` inherit from `Animal` but override the parent `sound()` method to print specific sounds (`Lion roars`, `Elephant trumpets`).
